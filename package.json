@@ -1,0 +1,30 @@
+{
+  "name": "@enhance/plugin-block-bots",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/enhance-dev/enhance-plugin-block-bots.git"
+  },
+  "keywords": [
+    "enhance",
+    "ai"
+  ],
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "author": "",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/enhance-dev/enhance-plugin-block-bots/issues"
+  },
+  "homepage": "https://github.com/enhance-dev/enhance-plugin-block-bots#readme",
+  "dependencies": {
+    "@architect/functions": "^8.1.6",
+    "xml2js": "^0.6.2"
+  }
+}
