@@ -56,4 +56,4 @@ User-agent: YouBot
 Disallow: /
 ```
 
-Once a day, the plugin will check the well maintained ai.robots.txt for new user agents to block. If the list has been updated, your site’s `robot.txt` file will be updated accordingly. This way you don’t need to constantly update the file as the plugin will take care of that chore for you.
+Once a day, the plugin will check the well maintained [ai.robots.txt](https://github.com/ai-robots-txt/ai.robots.txt) for new user agents to block. If the list has been updated, your site’s `robot.txt` file will be updated accordingly. This way you don’t need to constantly update the file as the plugin will take care of that chore for you.
