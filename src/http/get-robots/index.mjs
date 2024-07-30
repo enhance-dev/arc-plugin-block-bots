@@ -1,11 +1,11 @@
 import arc from '@architect/functions'
-import data from '@begin/data'
 import { readFileSync } from 'node:fs'
+
+const { airobotstxt } = await arc.tables()
 
 async function get () {
   // Do we have an updated robots.txt in the DB?
-  let result = await data.get({
-    table: 'ai-robots-txt',
+  let result = await airobotstxt.get({
     key: 'agents',
   })
   let robots = result?.robotsTxt || ''

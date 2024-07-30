@@ -1,14 +1,14 @@
-
 import { parseStringPromise } from 'xml2js'
-import data from '@begin/data'
+import arc from '@architect/functions'
+
+const { airobotstxt } = await arc.tables()
 
 export async function handler () {
   // check the release feed from https://github.com/ai-robots-txt/ai.robots.txt
   const updated = await getFeedUpdated()
 
   // get the last time we checked
-  let result = await data.get({
-    table: 'ai-robots-txt',
+  const result = await airobotstxt.get({
     key: 'updated',
   })
 
@@ -38,15 +38,13 @@ async function getFeedUpdated () {
 }
 
 async function updateDB ({ lastUpdated, robotsTxt })  {
-  return await data.set([
-    {
-      table: 'ai-robots-txt',
-      key: 'updated',
-      lastUpdated,
-    }, {
-      table: 'ai-robots-txt',
-      key: 'agents',
-      robotsTxt,
-    },
-  ])
+  await airobotstxt.put({
+    key: 'updated',
+    lastUpdated,
+  })
+  await airobotstxt.put({
+    key: 'agents',
+    robotsTxt,
+  })
+  return
 }
