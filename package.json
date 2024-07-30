@@ -1,5 +1,5 @@
 {
-  "name": "@enhance/plugin-block-bots",
+  "name": "@enhance/arc-plugin-block-bots",
   "version": "0.0.3",
   "description": "",
   "main": "src/index.js",
