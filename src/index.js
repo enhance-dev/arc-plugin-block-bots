@@ -25,5 +25,12 @@ module.exports = {
         },
       ]
     },
+    tables () {
+      return {
+        name: 'airobotstxt',
+        partitionKey: 'key',
+        partitionKeyType: 'string',
+      }
+    },
   },
 }
