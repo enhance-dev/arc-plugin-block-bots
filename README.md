@@ -1,11 +1,11 @@
-# `@enhance/plugin-block-bots`
+# `@enhance/arc-plugin-block-bots`
 
 Plugin for generating a `robots.txt` route for your Enhance application.
 
 ## Install
 
 ```
-npm i @enhance/plugin-block-bots
+npm i @enhance/arc-plugin-block-bots
 ```
 
 ## Usage
@@ -20,7 +20,7 @@ my-arc-app
 
 # Define your plugins pragma and add the enhance-styles plugin
 @plugins
-enhance/plugin-block-bots
+enhance/arc-plugin-block-bots
 ```
 
 ### Functionality
