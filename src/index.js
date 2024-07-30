@@ -11,7 +11,7 @@ module.exports = {
           src: robotsSrcDir,
           config: {
             views: false,
-          }
+          },
         },
       ]
     },
@@ -22,8 +22,8 @@ module.exports = {
           name: 'check-robots-txt-feed',
           rate: '1 day',
           src,
-        }
+        },
       ]
     },
-  }
+  },
 }

@@ -1,4 +1,4 @@
-/* eslint-disable no-undef */
+
 import { parseStringPromise } from 'xml2js'
 import data from '@begin/data'
 
@@ -37,7 +37,7 @@ async function getFeedUpdated () {
   return updated
 }
 
-async function updateDB({ lastUpdated, robotsTxt })  {
+async function updateDB ({ lastUpdated, robotsTxt })  {
   return await data.set([
     {
       table: 'ai-robots-txt',
@@ -46,7 +46,7 @@ async function updateDB({ lastUpdated, robotsTxt })  {
     }, {
       table: 'ai-robots-txt',
       key: 'agents',
-      robotsTxt
-    }
+      robotsTxt,
+    },
   ])
 }

@@ -2,11 +2,11 @@ import arc from '@architect/functions'
 import data from '@begin/data'
 import { readFileSync } from 'node:fs'
 
-async function get() {
+async function get () {
   // Do we have an updated robots.txt in the DB?
   let result = await data.get({
     table: 'ai-robots-txt',
-    key: 'agents'
+    key: 'agents',
   })
   let robots = result?.robotsTxt || ''
 
